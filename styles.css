@@ -1,3 +1,16 @@
+.page {
+    background-color: #7cbdc9;
+}
+
+.start {
+    color: #40817a;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25%;
+    font-size: 18pt;
+}
+
 #container {
     border: 2px solid blue;
 }
