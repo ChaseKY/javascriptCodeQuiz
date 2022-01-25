@@ -1,0 +1,11 @@
+#container {
+    border: 2px solid blue;
+}
+
+.options:hover {
+    background-color: lightblue;
+}
+
+.hide {
+    display: none;
+}
