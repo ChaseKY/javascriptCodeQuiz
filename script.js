@@ -3,15 +3,18 @@ var timeLimit = 20;
 var questionText = document.querySelector("#multiQuestions");
 var test = [{
         question: "What is a data type with two possible values of true or false?",
-        choices: ["Boolean", "Array", "String", "Function"]
+        choices: ["Boolean", "Array", "String", "Function"],
+        correct: "Boolean"
     },
     {   
         question: "Are Java and Javascript the same?",
-        choices: ["Yes", "No",]
+        choices: ["Yes", "No",],
+        correct: "No"
     },
     {
         question: "A ______ is a block of code designed to perform a particular task.",
-        choices: ["String", "Boolean", "Function", "String"]
+        choices: ["String", "Boolean", "Function", "String"],
+        correct: "Function"
     }
 ]
 
@@ -36,6 +39,13 @@ function startQuiz(){
     document.querySelector("#multiQuestions").classList.remove("hide")
     document.querySelector("#container").classList.remove("hide")
     document.querySelector(".start").classList.add("hide")
+}
+
+//Put function for correct answers
+function correctAnswer() {
+    if (options.textContent == correct) {
+        document.querySelector(".page").setAttribute("id", "#boop")
+    }
 }
 
 document.querySelector(".start").addEventListener("click", startQuiz)
