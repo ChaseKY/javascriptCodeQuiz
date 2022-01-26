@@ -1,9 +1,17 @@
-.page {
-    background-color: #7cbdc9;
+#highscores {
+    float: left;
 }
 
-#boop {
-    background-color: green;
+#timer {
+    float: right;
+}
+
+nav {
+    align-items: baseline;
+}
+
+.page {
+    background-color: #7cbdc9;
 }
 
 .start {
@@ -11,7 +19,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 25%;
+    margin-top: 20%;
     font-size: 18pt;
 }
 

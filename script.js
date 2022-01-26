@@ -18,6 +18,12 @@ var test = [{
     }
 ]
 
+function startQuiz() {
+    document.querySelector("#multiQuestions").classList.remove("hide")
+    document.querySelector("#container").classList.remove("hide")
+    document.querySelector(".start").classList.add("hide")
+}
+
 function displayChoices() {
     questionText.textContent = test[current].question
     for (var i = 0; i < test[current].choices.length; i++) {
@@ -35,18 +41,12 @@ function displayChoices() {
     }
 }
 
-function startQuiz(){
-    document.querySelector("#multiQuestions").classList.remove("hide")
-    document.querySelector("#container").classList.remove("hide")
-    document.querySelector(".start").classList.add("hide")
-}
-
 //Put function for correct answers
-function correctAnswer() {
-    if (options.textContent == correct) {
-        document.querySelector(".page").setAttribute("id", "#boop")
-    }
-}
+//function correctAnswer() {
+//    if (options.textContent == correct) {
+//        document.querySelector(".page").
+//    }
+//}
 
 document.querySelector(".start").addEventListener("click", startQuiz)
 
