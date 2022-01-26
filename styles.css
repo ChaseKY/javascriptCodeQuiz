@@ -1,13 +1,16 @@
+nav {
+    display: flex; 
+    justify-content: space-between;
+}
+
 #highscores {
-    float: left;
+    font-size: 16pt;
+    padding-left: 5px;
 }
 
 #timer {
-    float: right;
-}
-
-nav {
-    align-items: baseline;
+    font-size: 16pt;
+    padding-right: 5px;
 }
 
 .page {

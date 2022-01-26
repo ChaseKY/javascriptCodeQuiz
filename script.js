@@ -1,5 +1,4 @@
 var current = 0;
-var timeLimit = 20;
 var questionText = document.querySelector("#multiQuestions");
 var test = [{
         question: "What is a data type with two possible values of true or false?",
@@ -24,6 +23,17 @@ function startQuiz() {
     document.querySelector(".start").classList.add("hide")
 }
 
+function startTimer(duration, display) {
+    var timer = duration, seconds;
+    setInterval(function() {
+        seconds = parseInt(timer % 60, 10);
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+        display.textContent = seconds;
+        if (--timer < 0) {
+            timer = duration;
+        }
+    },1000);
+}
 function displayChoices() {
     questionText.textContent = test[current].question
     for (var i = 0; i < test[current].choices.length; i++) {
@@ -49,5 +59,10 @@ function displayChoices() {
 //}
 
 document.querySelector(".start").addEventListener("click", startQuiz)
+
+document.querySelector(".start").addEventListener("click", startTimer)
+    var timeLimit = 20,
+        display = document.querySelector('#time');
+    startTimer(timeLimit, display);
 
 displayChoices()
