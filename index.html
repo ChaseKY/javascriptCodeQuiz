@@ -19,13 +19,28 @@
 
 </header>
 
-<body class="page">
+<body id="page">
     
-    <h2 class="hide" id="multiQuestions"></h2>
-    
-    <div class="hide" id="container"></div>
+    <div class="userScore">
+        <h1>Score <span id="scoreValue">0</span></h1>
+    </div>
 
-    <button class="start">Start Quiz</button>
+    <div>
+        <h2 class="hide" id="multiQuestions"></h2>
+    
+        <div class="hide" id="container"></div>
+
+        <button class="start">Start Quiz</button>
+    </div>
+
+    <div class="userInput">
+        <label for="initials">Initials</label>
+        <input type="text" name="initials" id="initials" />
+    </div>
+
+    <div class="submitBtn">
+        <button id="submit">Submit score</button>
+    </div>
 
     <script src="script.js"></script>
 

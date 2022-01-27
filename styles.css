@@ -13,7 +13,7 @@ nav {
     padding-right: 5px;
 }
 
-.page {
+#page {
     background-color: #7cbdc9;
 }
 
@@ -36,4 +36,17 @@ nav {
 
 .hide {
     display: none;
+}
+
+.userInput {
+    margin-top: 20%;
+    margin-left: 40%;
+}
+
+.submitBtn {
+    margin-left: 49%;
+}
+
+.userScore {
+    text-align: center;
 }
