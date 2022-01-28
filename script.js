@@ -78,7 +78,8 @@ function gameOver() {
 function correctAnswer(selectedChoice) {
     if (selectedChoice == test[current].correct) {
         // document.querySelector("#page").style.backgroundColor = "green";
-        highscore++;
+        highscore++
+        Uscore.textContent = highscore;
     }
 }
 
